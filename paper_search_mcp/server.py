@@ -5,7 +5,7 @@ import os
 import logging
 import re
 import httpx
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer
 from .config import get_env
 from .academic_platforms.arxiv import ArxivSearcher
 from .academic_platforms.pubmed import PubMedSearcher
@@ -35,7 +35,7 @@ from .utils import extract_doi
 from .paper import Paper
 
 # Initialize MCP server
-mcp = FastMCP("paper_search_server")
+mcp = MCPServer("paper_search_server")
 logger = logging.getLogger(__name__)
 
 # Instances of searchers

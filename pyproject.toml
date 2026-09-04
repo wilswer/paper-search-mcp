@@ -33,7 +33,6 @@ classifiers = [
 dependencies = [
     "requests",
     "feedparser",
-    "fastmcp",
     "pypdf",
     "mcp[cli]>=1.6.0",
     "beautifulsoup4>=4.12.0",
